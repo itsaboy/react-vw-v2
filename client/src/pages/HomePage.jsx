@@ -13,17 +13,13 @@ export default function HomePage() {
   return (
     <div className="bg-transparent">
       <div className="relative isolate overflow-hidden pt-14">
-        <div
-          className="absolute inset-y-0 right-1/4 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-45deg] bg-gradient-to-b from-red-950 to-transparent shadow-xl sm:-mr-80 lg:-mr-96"
-          aria-hidden="true"
-        />
         <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-            <h1 className="font-medieval max-w-2xl text-6xl font-bold tracking-tight text-gray-200 sm:text-9xl lg:col-span-2 xl:col-auto">
+            <h1 className="font-medieval max-w-2xl text-6xl font-bold tracking-tight text-gray-400 sm:text-9xl lg:col-span-2 xl:col-auto">
               Void Warrior
             </h1>
             <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-              <p className="text-lg leading-8 text-gray-300">
+              <p className="text-lg leading-8 text-gray-200">
                 Embark on an epic journey through shadows and light in Void
                 Warrior, a mesmerizing turn-based 2D JRPG created using the
                 Godot Engine. Set in the mystical realms of darkness and the
@@ -40,7 +36,7 @@ export default function HomePage() {
                 </Link>
                 <a
                   href="#"
-                  className="text-sm font-semibold leading-6 text-gray-400"
+                  className="text-sm font-semibold leading-6 text-gray-400 hover:text-gray-300"
                 >
                   Changelog <span aria-hidden="true">→</span>
                 </a>

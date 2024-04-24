@@ -19,7 +19,7 @@ export default function Header() {
   const { currentPage, setCurrentPage } = useContext(AppContext);
 
   return (
-    <header className="bg-red-950">
+    <header className="bg-transparent">
       <nav
         className="mx-auto flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -30,9 +30,9 @@ export default function Header() {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-semibold leading-6 text-gray-200 px-8 py-3 rounded-lg ${
+                className={`text-sm font-semibold leading-6 text-gray-200 px-8 py-3 rounded-lg bg-no-repeat bg-cover bg-center ${
                   currentPage === item.name
-                    ? "border border-gray-400 text-red-800"
+                    ? "shadow-sm shadow-gray-200 hover:cursor-default"
                     : ""
                 }`}
                 style={
