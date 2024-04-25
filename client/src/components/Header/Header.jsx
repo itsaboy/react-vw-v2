@@ -30,16 +30,11 @@ export default function Header() {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-semibold leading-6 text-gray-200 px-8 py-3 rounded-lg bg-no-repeat bg-cover bg-center ${
+                className={`text-sm font-semibold leading-6 text-gray-200 rounded-lg ${
                   currentPage === item.name
-                    ? "shadow-sm shadow-gray-200 hover:cursor-default"
-                    : ""
+                    ? "animate-pulse hover:cursor-default"
+                    : "hover:text-gray-300"
                 }`}
-                style={
-                  currentPage === item.name
-                    ? { backgroundImage: `url(${button})` }
-                    : {}
-                }
               >
                 {item.name}
               </Link>

@@ -15,7 +15,7 @@ export default function BodyLayout() {
         aria-hidden="true"
       />
       <Header />
-      <main className="flex-grow bg-transparent">
+      <main className="flex-grow bg-transparent relative isolate overflow-hidden pt-14">
         <Outlet />
       </main>
       <Footer />
