@@ -36,15 +36,15 @@ export default function InfoPage() {
             both deeply engaging and accessible to newcomers.
           </p>
           <div className="mt-10 max-w-2xl">
-            <ul role="list" className="mt-8 space-y-8 text-gray-400">
+            <ul role="list" className="mt-8 space-y-8 text-gray-300">
               <li className="flex gap-x-3">
                 <FolderArrowDownIcon
-                  className="mt-1 h-5 w-5 flex-none text-red-400"
+                  className="mt-1 h-5 w-5 flex-none text-blue-400"
                   aria-hidden="true"
                 />
                 <span>
                   <button
-                    className="font-semibold text-blue-400"
+                    className="font-semibold text-gray-400 hover:text-blue-300"
                     onClick={() => setInstallOpen(true)}
                   >
                     Installation guide
@@ -55,12 +55,12 @@ export default function InfoPage() {
               </li>
               <li className="flex gap-x-3">
                 <CursorArrowRippleIcon
-                  className="mt-1 h-5 w-5 flex-none text-red-400"
+                  className="mt-1 h-5 w-5 flex-none text-blue-400"
                   aria-hidden="true"
                 />
                 <span>
                   <button
-                    className="font-semibold text-blue-400"
+                    className="font-semibold text-gray-400 hover:text-blue-300"
                     onClick={() => setControlsOpen(true)}
                   >
                     Game controls
@@ -71,12 +71,12 @@ export default function InfoPage() {
               </li>
               <li className="flex gap-x-3">
                 <MapIcon
-                  className="mt-1 h-5 w-5 flex-none text-red-400"
+                  className="mt-1 h-5 w-5 flex-none text-blue-400"
                   aria-hidden="true"
                 />
                 <span>
                   <button
-                    className="font-semibold text-blue-400"
+                    className="font-semibold text-gray-400 hover:text-blue-300"
                     onClick={() => setRoadmapOpen(true)}
                   >
                     Roadmap info

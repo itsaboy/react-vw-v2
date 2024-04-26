@@ -31,13 +31,13 @@ export default function HomePage() {
           <div className="mt-10 flex items-center gap-x-6">
             <Link
               to="/downloads"
-              className="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-gray-200 shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+              className="rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-gray-200 shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
             >
               Downloads
             </Link>
             <button
               onClick={() => setChangeLogOpen(true)}
-              className="text-sm font-semibold leading-6 text-gray-400 hover:text-gray-300"
+              className="text-sm font-semibold leading-6 text-gray-400 hover:text-blue-300"
             >
               Changelog <span aria-hidden="true">→</span>
             </button>

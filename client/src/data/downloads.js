@@ -5,6 +5,7 @@ export const downloads = [
     version: "Demo version 1.0.2",
     date: "2023-07-31",
     platform: "Windows",
+    disabled: false,
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const downloads = [
     version: "Coming soon...",
     date: "N/A",
     platform: "Apple",
+    disabled: true,
   },
   {
     id: 3,
@@ -19,5 +21,6 @@ export const downloads = [
     version: "Coming soon...",
     date: "N/A",
     platform: "Linux",
+    disabled: true,
   },
 ];

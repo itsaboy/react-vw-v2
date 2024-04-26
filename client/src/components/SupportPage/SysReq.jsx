@@ -2,10 +2,10 @@ import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { WrenchIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
-export default function SysReq({ donateOpen, setDonateOpen }) {
+export default function SysReq({ sysReqOpen, setSysReqOpen }) {
   return (
-    <Transition.Root show={donateOpen} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={setDonateOpen}>
+    <Transition.Root show={sysReqOpen} as={Fragment}>
+      <Dialog as="div" className="relative z-10" onClose={setSysReqOpen}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -34,7 +34,7 @@ export default function SysReq({ donateOpen, setDonateOpen }) {
                   <button
                     type="button"
                     className="rounded-md bg-gray-500 text-gray-400 hover:text-gray-950 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
-                    onClick={() => setDonateOpen(false)}
+                    onClick={() => setSysReqOpen(false)}
                   >
                     <span className="sr-only">Close</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />

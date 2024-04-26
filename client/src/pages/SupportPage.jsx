@@ -1,12 +1,19 @@
-import { useState } from "react";
+import { useEffect, useContext, useState } from "react";
 import BugReport from "../components/SupportPage/BugReport";
 import ContactMe from "../components/SupportPage/ContactMe";
 import SysReq from "../components/SupportPage/SysReq";
+import { AppContext } from "../context/AppContext";
 import image from "../assets/void-king.webp";
 
 export default function SupportPage() {
   const [contactMeOpen, setContactMeOpen] = useState(false);
-  const [donateOpen, setDonateOpen] = useState(false);
+  const [sysReqOpen, setSysReqOpen] = useState(false);
+
+  const { currentPage, setCurrentPage } = useContext(AppContext);
+
+  useEffect(() => {
+    setCurrentPage("Support");
+  }, [currentPage]);
 
   return (
     <div className="mx-auto max-w-7xl px-6 py-12 md:py-32">
@@ -30,18 +37,18 @@ export default function SupportPage() {
         <div className="w-full lg:max-w-xl lg:flex-auto">
           <h3 className="sr-only">Support section</h3>
           <BugReport />
-          <div className="mt-8 flex border-t border-gray-100 pt-8">
+          <div className="mt-8 flex border-t border-red-400 pt-8">
             <button
               onClick={() => setContactMeOpen(true)}
-              className="text-sm font-semibold leading-6 text-gray-300 hover:text-blue-400"
+              className="text-sm font-semibold leading-6 text-gray-400 hover:text-blue-300"
             >
               Contact me <span aria-hidden="true">&rarr;</span>
             </button>
           </div>
-          <div className="mt-8 flex border-t border-gray-100 pt-8">
+          <div className="mt-8 flex border-t border-red-400 pt-8">
             <button
-              onClick={() => setDonateOpen(true)}
-              className="text-sm font-semibold leading-6 text-gray-300 hover:text-blue-400"
+              onClick={() => setSysReqOpen(true)}
+              className="text-sm font-semibold leading-6 text-gray-400 hover:text-blue-300"
             >
               System Requirements <span aria-hidden="true">&rarr;</span>
             </button>
@@ -52,7 +59,7 @@ export default function SupportPage() {
         contactMeOpen={contactMeOpen}
         setContactMeOpen={setContactMeOpen}
       />
-      <SysReq donateOpen={donateOpen} setDonateOpen={setDonateOpen} />
+      <SysReq sysReqOpen={sysReqOpen} setSysReqOpen={setSysReqOpen} />
     </div>
   );
 }
