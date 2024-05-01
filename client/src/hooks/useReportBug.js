@@ -6,9 +6,9 @@ export const useReportBug = () => {
 
   const reportBug = useCallback(async (bugReport) => {
     setLoading(true);
-    console.log(bugReport);
     try {
-      const res = await fetch("/api/bugReport/create", {
+      const req = "/api/bugReport/create";
+      const res = await fetch(req, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -20,7 +20,7 @@ export const useReportBug = () => {
         const data = await res.json();
         setMessage(data.message);
       } else {
-        setMessage(data.message);
+        setMessage("Submission failed!");
       }
     } catch (err) {
       setMessage(err.message);

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BugAntIcon } from "@heroicons/react/24/outline";
+import Feedback from "./Feedback";
 import { useReportBug } from "../../hooks/useReportBug";
 
 export default function BugReport() {
@@ -56,13 +57,14 @@ export default function BugReport() {
           <div className="absolute inset-x-0 bottom-0 flex justify-end py-2 pl-3 pr-2">
             <div className="flex-shrink-0">
               {message ? (
-                <p className="px-3 py-2 text-sm font-semibold text-gray-300">
-                  {message}
-                </p>
+                <Feedback text={message} clear={setMessage} />
               ) : (
                 <button
                   type="submit"
-                  className="inline-flex items-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-gray-200 shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                  className={`inline-flex items-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-gray-200 shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 ${
+                    bugReport.report ? "" : "opacity-50 cursor-not-allowed"
+                  }`}
+                  disabled={!bugReport.report ? true : false}
                 >
                   Submit
                 </button>
