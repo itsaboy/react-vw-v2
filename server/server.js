@@ -15,6 +15,10 @@ app.use(express.static(path.join(__dirname, "../client/dist")));
 
 app.use("/api/bugReport", bugReportRouter);
 
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+});
+
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
