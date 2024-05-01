@@ -27,7 +27,7 @@ export default function MobileNav({open, setOpen}) {
           </div>
           <div className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img className="h-12 w-auto" src={logo} alt="" />
+            <img className="h-12 w-auto" src={logo} alt="void warrior logo" />
           </div>
         </div>
         <div className="mt-6 space-y-2">
