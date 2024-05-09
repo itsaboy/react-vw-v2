@@ -35,12 +35,13 @@ export default function HomePage() {
             >
               Downloads
             </Link>
-            <button
-              onClick={() => setChangeLogOpen(true)}
+            <a
+              href="https://youtu.be/3vtY0LK3vi4?si=Sy4S4rihVwOvKA4d"
+              target="_blank"
               className="text-sm font-semibold leading-6 text-gray-400 hover:text-blue-300"
             >
-              Changelog <span aria-hidden="true">→</span>
-            </button>
+              Video preview <span aria-hidden="true">→</span>
+            </a>
           </div>
         </div>
         <img
