@@ -36,7 +36,7 @@ export default function HomePage() {
               Downloads
             </Link>
             <a
-              href="https://youtu.be/3vtY0LK3vi4?si=Sy4S4rihVwOvKA4d"
+              href="https://youtu.be/iemdbQDlYWY"
               target="_blank"
               className="text-sm font-semibold leading-6 text-gray-400 hover:text-blue-300"
             >
