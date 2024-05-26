@@ -2,10 +2,12 @@ import { Outlet } from "react-router-dom";
 import Header from "../components/Header/Header";
 import background from "../assets/space.svg";
 import Footer from "../components/Footer/Footer";
+import MetaData from "../components/MetaData";
 
 export default function BodyLayout() {
   return (
     <div className="flex flex-col min-h-screen h-full relative isolate overflow-hidden">
+      <MetaData />
       <div
         className="absolute inset-0 bg-no-repeat bg-cover bg-center -z-10"
         style={{ backgroundImage: `url(${background})` }}
