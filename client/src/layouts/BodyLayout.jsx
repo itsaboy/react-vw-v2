@@ -9,7 +9,7 @@ export default function BodyLayout() {
     <div className="flex flex-col min-h-screen h-full relative isolate overflow-hidden">
       <MetaData />
       <div
-        className="absolute inset-0 bg-no-repeat bg-cover bg-center bg-fixed -z-10"
+        className="absolute inset-0 bg-no-repeat bg-cover bg-center bg-fixed -z-10 min-h-svh"
         style={{ backgroundImage: `url("${background}")` }}
       />
       <div
