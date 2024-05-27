@@ -89,7 +89,7 @@ export default function InfoPage() {
           </div>
         </div>
         <img
-          className="place-self-end mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-12 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-8 shadow-lg shadow-blue-900/60 transition duration-300 hover:ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-blue-900/80 bg-gray-900"
+          className="place-self-end mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-12 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-8 shadow-lg shadow-blue-900/60 transition duration-300 hover:ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-blue-900/80 bg-gray-950"
           src={image}
           alt="A warrior in space"
         />
