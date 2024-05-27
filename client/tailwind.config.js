@@ -3,13 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      medieval: ["Medieval"]
+      medieval: ["Medieval"],
     },
-    extend: {
-      backgroundImage: {
-        'custom-svg': "url('./src/assets/space.svg')",
-      },
-    },
+    extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 };
