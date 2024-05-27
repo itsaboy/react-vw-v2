@@ -5,7 +5,11 @@ export default {
     fontFamily: {
       medieval: ["Medieval"]
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'custom-svg': "url('./src/assets/space.svg')",
+      },
+    },
   },
   plugins: [],
 };
